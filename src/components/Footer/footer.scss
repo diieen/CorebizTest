@@ -1,0 +1,101 @@
+.footer-container {
+    background: #000000;
+    padding-top: 25px;
+    padding-bottom: 28px;
+    color: #FFFF;
+    border-bottom: 10px solid #C0C0C0;
+
+    .footer-box {
+        display: flex;
+        justify-content: space-around;
+
+        .location-box {
+            width: 238px;
+
+            .title-location {
+                font-size: 20px;
+                font-weight: 700;
+                color: #FFFF;
+                margin: 0;
+            }
+
+            .spacer-footer {
+                width: 45px;
+                height: 5px;
+                background: #fff;
+                margin: 15px 0;
+            }
+
+            .location-infos {
+                margin: 0;
+                font-size: 13px;
+                line-height: 29px;
+            }
+        }
+
+        .btns-footer-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 25px;
+
+            button {
+                width: 195px;
+                height: 38px;
+                border-radius: 5px;
+                background: #FFFF;
+                border: none;
+                font-size: 12px;
+                font-weight: 600;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .message-icon {
+                    display: inline-block;
+                    width: 17px;
+                    height: 14px;
+                    background: url(../../img/mail-icon.png);
+                    margin-right: 18px;
+                }
+
+                .headset-icon {
+                    display: inline-block;
+                    min-width: 16px; 
+                    height: 18.58px;
+                    background: url(../../img/headset-icon.png);
+                    margin-left: 13px;
+                }
+            }
+        }
+
+        .footer-logos-box {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .developed-by {
+                p {
+                    font-size: 10px;
+                    color: #fff;
+                    margin: 0;
+                }
+
+                .corebiz-logo {
+                    width: 76px;
+                    height: 18px;
+                    background: url(../../img/logo-corebiz-footer.png);
+                    display: block;
+                }
+            }
+
+            .vtex-icon {
+                width: 57px;
+                height: 35px;
+                display: block;
+                background: url(../../img/vtex-icon.png);
+            }
+        } 
+    }
+}

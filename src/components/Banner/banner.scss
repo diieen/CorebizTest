@@ -1,0 +1,28 @@
+.banner-container {
+    position: relative;
+
+    .slick-dots {
+        bottom: 37px;
+        
+        li {
+            margin: 0;
+            width: 10px;
+            height: 10px;
+            background: #BDBDBD;
+            border-radius: 100%;
+            margin: 0 6px;
+
+            &.slick-active {
+                background: #F8475F;
+            }
+
+            button {
+                padding: 0;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
