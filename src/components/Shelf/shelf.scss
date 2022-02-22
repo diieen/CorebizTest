@@ -18,6 +18,10 @@
     .shelf-slider-container {
         margin: 0 -50px;
 
+        @media (max-width: 768px) {
+            margin: 0;
+        }
+
         .slick-arrow {
             width: 13px;
             height: 22px;
@@ -43,6 +47,10 @@
             width: fit-content !important;
             transition: .3s;
             cursor: pointer;
+
+            @media (max-width: 768px) {
+                margin: 0;
+            }
 
             .product-image-box {
                 position: relative;

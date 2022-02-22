@@ -8,6 +8,10 @@ body {
 .container {
   max-width: 1172px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+      margin: 0 20px;
+  }
 }
 
 .header-box {
@@ -102,4 +106,58 @@ body {
         }
     }
   }
+}
+
+.top-header-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0 15px 0;
+
+    .menu-box {
+        display: flex;
+        align-items: center;
+
+        .menu-icon {
+            width: 22.5px;
+            height: 15.02px;
+            background: url(../../img/menu-icon.png);
+            display: block;
+        }
+    }
+
+    .logo-box {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 109px;
+        }
+    }
+
+    .cart-icon-box {
+        display: flex;
+        align-items: center;
+
+        i {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            background: url(../../img/cart-icon.png);
+        }
+
+        p {
+            font-size: 10px;
+            font-weight: 600;
+            color: #fff;
+            border-radius: 100%;
+            width: 14px;
+            height: 14px;
+            background: #F8475F;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            margin-left: 5px;
+        }
+    }
 }

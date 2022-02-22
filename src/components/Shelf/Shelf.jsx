@@ -10,7 +10,14 @@ export default function Shelf() {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        draggable: false
+        draggable: false,
+
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2
+            }
+        }]
     };
 
     const HandleStars = ({stars}) => {

@@ -14,8 +14,8 @@ export default function Newsletter() {
         } else {
             api
             .post("/newsletter", {
-                email: emailNews,
-                name: nameNews
+                "email": emailNews,
+                "name": nameNews
             })
             .then((response) => alert("Enviado com sucesso!"))
             .catch((err) => {
