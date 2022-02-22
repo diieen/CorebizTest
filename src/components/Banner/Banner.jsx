@@ -1,6 +1,8 @@
 import "./banner.scss";
 import banner from "../../img/banner-1.png";
+import bannerMobile from "../../img/banner-2.png";
 import Slider from "react-slick";
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 export default function bannerC() {
     const settings = {
@@ -26,12 +28,22 @@ export default function bannerC() {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
             />
-            <Slider {...settings}>
-                <img src={banner} alt="" />
-                <img src={banner} alt="" />
-                <img src={banner} alt="" />
-                <img src={banner} alt="" />
-            </Slider>
+            <BrowserView>
+                <Slider {...settings}>
+                    <img src={banner} alt="" />
+                    <img src={banner} alt="" />
+                    <img src={banner} alt="" />
+                    <img src={banner} alt="" />
+                </Slider>
+            </BrowserView>
+            <MobileView>
+                <Slider {...settings}>
+                    <img src={bannerMobile} alt="" />
+                    <img src={bannerMobile} alt="" />
+                    <img src={bannerMobile} alt="" />
+                    <img src={bannerMobile} alt="" />
+                </Slider>
+            </MobileView>
         </div>
     )
 }

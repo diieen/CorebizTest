@@ -15,7 +15,9 @@ export default function Shelf() {
         responsive: [{
             breakpoint: 600,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 2,
+                dots: true,
+                arrows: false
             }
         }]
     };

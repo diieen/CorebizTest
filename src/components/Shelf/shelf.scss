@@ -1,5 +1,9 @@
 .shelf-container {
     margin-bottom: 69px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+    }
     
     .shelf-title {
         font-size: 20px;
@@ -7,6 +11,11 @@
         width: fit-content;
         margin: 25px 0 20px 0;
         line-height: 27px;
+
+        @media (max-width: 768px) {
+            margin-top: 15px;
+            font-size: 18px;
+        }
 
         div {
             height: 4.3px;
@@ -19,7 +28,7 @@
         margin: 0 -50px;
 
         @media (max-width: 768px) {
-            margin: 0;
+            margin: 0 -10px;
         }
 
         .slick-arrow {
@@ -42,6 +51,16 @@
             right: 10px;
         }
 
+        @media (max-width: 768px) {
+            .slick-slide>div {
+                padding: 0 12px;
+            }
+    
+            .slick-list {
+                margin: 0 -12px;
+            }
+        }
+
         .shelf-item {
             margin: 0 50px;
             width: fit-content !important;
@@ -50,10 +69,17 @@
 
             @media (max-width: 768px) {
                 margin: 0;
+                width: 100% !important;
             }
 
             .product-image-box {
                 position: relative;
+
+                @media (max-width: 768px) {
+                    img {
+                        max-width: 100%;
+                    }
+                }
 
                 .promotion-flag {
                     width: 81px;
@@ -62,7 +88,13 @@
                     position: absolute;
                     top: 0;
                     right: 0;
-                    background: url(../../img/promotion-flag.png)
+                    background: url(../../img/promotion-flag.png);
+
+                    @media (max-width: 768px) {
+                        width: 50.4px;
+                        height: 44.54px;
+                        background-size: contain;
+                    }
                 }
             }
 
@@ -158,14 +190,45 @@
                     &:hover {
                         background: #3f3f3f;
                     }
+
+                    @media (max-width: 768px) {
+                        opacity: 1;
+                        width: 140px;
+                        height: 36px;
+                        font-size: 15px;
+                    }
                 }
             }
 
-            &:hover {
-                background: #E6E8EA;
+            @media (min-width: 768px) {
+                &:hover {
+                    background: #E6E8EA;
+    
+                    button {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .slick-dots {
+            bottom: 10px;
+
+            li {
+                width: 7px;
+                height: 7px;
+                background: #BDBDBD;
+                border-radius: 100%;
+                margin: 0 4.5px;
+
+                &.slick-active {
+                    background: #F8475F;
+                }
 
                 button {
-                    opacity: 1;
+                    &:before {
+                        display: none;
+                    }
                 }
             }
         }

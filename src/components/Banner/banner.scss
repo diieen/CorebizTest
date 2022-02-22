@@ -24,5 +24,14 @@
                 }
             }
         }
+
+        @media (max-width: 768px) {
+            bottom: 15px;
+
+            li {
+                width: 7px;
+                height: 7px;
+            }
+        }
     }
 }

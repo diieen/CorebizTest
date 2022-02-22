@@ -5,6 +5,11 @@
     color: #FFFF;
     border-bottom: 10px solid #C0C0C0;
 
+    @media (max-width: 768px) {
+        padding-bottom: 10px;
+        border-bottom: 5px solid #C0C0C0;
+    }
+
     .footer-box {
         display: flex;
         justify-content: space-around;
@@ -15,6 +20,10 @@
 
         .location-box {
             width: 238px;
+
+            @media (max-width: 768px) {
+                margin-bottom: 30px;
+            }
 
             .title-location {
                 font-size: 20px;
@@ -42,6 +51,11 @@
             flex-direction: column;
             justify-content: center;
             gap: 25px;
+
+            @media (max-width: 768px) {
+                align-items: center;
+                margin-bottom: 24px;
+            }
 
             button {
                 width: 195px;
@@ -78,6 +92,10 @@
             display: flex;
             align-items: center;
             gap: 25px;
+
+            @media (max-width: 768px) {
+                justify-content: space-around;
+            }
 
             .developed-by {
                 p {
